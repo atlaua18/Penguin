@@ -17,5 +17,5 @@ td, th {
 .someClass:hover {
   color: black;
   box-shadow: -3px 7px 13px 10px #000000;
-  transition: box-shadow top 1s;
+  transition: box-shadow 1s;
 }
