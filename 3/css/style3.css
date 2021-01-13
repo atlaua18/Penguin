@@ -41,6 +41,7 @@
 body {
   margin: 0;
   font-family: 'Gilroy', sans-serif;
+  /* background-color: gray; */
 }
 
 a {
@@ -88,7 +89,7 @@ a {
 }
 
 .icon {
-  padding-left: 20px;
+  padding-left: 40px;
   background: url(../img/return.png) no-repeat left;
   background-size: contain;
 }
@@ -122,6 +123,138 @@ a {
   padding-left: 200px;
   text-align: center;
   display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+}
+
+.content {
+  width: 1180px;
+  margin: auto;
+}
+
+.mod_title {
+  font-size: 40px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+}
+
+.mod_content {
+  width: 1020px;
+  margin: auto;
+}
+
+.mod_main_title {
+  font-size: 48px;
+  padding: 110px 367px 93px 23px;
+  /* padding-top: 110px;
+  padding-left: 23px;
+  padding-right: 367px;
+  padding-bottom: 93px; */
+  margin: 0;
+}
+
+.mod_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.child {
+  display: inline-block;
+  width: 480px;
+  min-height: 505px;
+  border: 1px solid #000;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 48px;
+  color: #eaeaea;
+}
+
+.right {
+  margin-right: 0;
+}
+
+.mod_img1 {
+  width: 477px;
+  height: 180px;
+  background-image: url(../img/4/2.1.png);
+  background-size: cover;
+}
+
+.mod_img2 {
+  width: 478px;
+  height: 180px;
+  background-image: url(../img/4/2.2.png);
+  background-size: cover;
+}
+
+.mod_img3 {
+  width: 477px;
+  height: 180px;
+  background-image: url(../img/4/2.3.png);
+  background-size: cover;
+}
+
+.mod_img4 {
+  width: 478px;
+  height: 180px;
+  background-image: url(../img/4/2.4.png);
+  background-size: cover;
+}
+
+.inside {
+  width: 477px;
+  height: 325px;
+  /* background-color: red; */
+}
+
+.mod_subtitle {
+  margin: 0;
+  padding: 30px 0px 30px 50px;
+  font-size: 36px;
+  color: #2f1ce4;
+}
+
+.cont_text {
+  font-size: 16px;
+  color: #222020;
+  margin: 0;
+  padding: 0px 0px 14px 50px;
+  font-weight: 500;
+}
+
+.bottom {
+  /* margin: auto; */
+  margin: 30px 372px 0px 372px;
+  text-align: center;
+  border: 3px solid #2f1ce4;
+  /* display: inline-block; */
+  /* padding: 33px 79px 33px 79px; */
+  /* width: 280px; */
+}
+
+.mod_more {
+  font-size: 18px;
+  color: #2f1ce4;
+  font-weight: 500;
+}
+
+.wave {
+  height: 100%;
+  padding-bottom: 700px;
+  background: url(../img/4/wave.png) right bottom no-repeat;
+  /* background-position: right bottom; */
+  /* background-size: cover; */
+  position: relative;
 }
