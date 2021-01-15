@@ -9,49 +9,43 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <div class="conteiner">
-      <div class="logo">
-        <a href="">
-          <img src="/Hotels/img/logo.png">
+      <div class="header1">
+        <a href="" class="logo">
+          <img src="/Hotels/img/logo.png" class="logo-img">
         </a>
-        <a href="tel:+74953225448 ">
+        <a href="tel:+74953225448 " class="header-tlf">
           +7 495 322 54 48
         </a>
-        <a href="">
+        <a href="" class="header-lk">
           Личный кабинет
         </a>
       </div>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="">О нас</a>
-              </a>
+      <div class="header2">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link">О нас</a>
             </li>
-            <li>
-              <a href="">Услуги</a>
-              </a>
+            <li class="nav-item">
+              <a href="" class="nav-link">Услуги</a>
             </li>
-            <li>
-              <a href="">Преимущества</a>
-              </a>
+            <li class="nav-item">
+              <a href="" class="nav-link">Преимущества</a>
             </li>
-            <li>
-              <a href="">Размещение</a>
-              </a>
+            <li class="nav-item">
+              <a href="" class="nav-link">Размещение</a>
             </li>
-            <li>
-              <a href="">Блог</a>
-              </a>
+            <li class="nav-item">
+              <a href="" class="nav-link">Блог</a>
             </li>
-            <li>
-              <a href="">Контакты</a>
-              </a>
+            <li class="nav-item">
+              <a href="" class="nav-link">Контакты</a>
             </li>
           </ul>
-          <input type="text" placeholder="Поиск">
-          <button type="submit"></button>
+          <input type="text" placeholder="Поиск" class="nav-search">
+          <button type="submit" class="nav-search-icon"></button>
         </nav>
       </div>
     </div>
@@ -59,130 +53,289 @@
 
   <main>
     <div class="conteiner">
-
       <section class="section-reservation">
-        <div>
-          <h2>Быстрая бронь</h2>
-          <input type="text" placeholder="Город">
-          <input type="text" placeholder="Категория номера">
-          <input type="text" placeholder="Дата заселения">
-          <input type="text" placeholder="Количество ночей">
-          <input type="text" placeholder="Количество гостей">
+        <div class="div-reservation">
+          <h2 class="section-heading">Быстрая бронь</h2>
+          <input type="text" placeholder="Город" class="reservation-item">
+          <input type="text" placeholder="Категория номера" class="reservation-item">
+          <input type="text" placeholder="Дата заселения" class="reservation-item">
+          <input type="text" placeholder="Количество ночей" class="reservation-item">
+          <input type="text" placeholder="Количество гостей" class="reservation-item">
         </div>
         <div>
-          <button type="submit">Найти номер</button>
-          <a href="">9756</a>
-          <span>предложений доступно</span>
+          <button type="submit" class="reservation-button">Найти номер</button>
+          <a href="" class="reservation-number">9756</a>
+          <span class="reservation-words">предложений доступно</span>
         </div>
       </section>
-
       <section class="section-offer">
-        <h2>Спецпредложение</h2>
-        <h3>Номера категории люкс</h3>
-        <span>от 5000 р</span>
-        <a href="">Подробнее</a>
-      </section>
-
-      <section class="section-aboutus">
-        <div class="conteiner">
-          <h2>О нас</h2>
-          <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс
-            внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения
-            высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный
-            эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом
-            сложившаяся
-            структура организации требуют определения и уточнения существенных финансовых и административных условий.
-          </p>
-        </div>
-      </section>
-
-      <section class="section-services">
-        <div class="conteiner">
-          <h2>Услуги</h2>
-          <ul>
-            <li>
-              <div class="section-services-img1"></div>
-              <!--Картинка1 -->
-              <div>
-                <a href="">Эксклюзивное обслуживание</a>
-                <p>Равным образом постоянный количественный рост и сфера нашей акт</p>
-              </div>
-            </li>
-            <li>
-              <div class="section-services-img2"></div>
-              <!--Картинка2 -->
-              <div>
-                <a href="">Аренда банкетных залов</a>
-                <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
-              </div>
-            </li>
-            <li>
-              <div class="section-services-img3"></div>
-              <!--Картинка3 -->
-              <div>
-                <a href="">Сауны, бассейны, бани, фитнес-залы</a>
-                <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-              </div>
-            </li>
-            <li>
-              <div class="section-services-img4"></div>
-              <!--Картинка4 -->
-              <div>
-                <a href="">Охраняемые автомобильные стоянки</a>
-                <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section-advantage">
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Таким образом реализация плановых заданий играет важную роль для понимания</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Повседневная практика показывает, что сложившаяся структура организации</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
-          </li>
-          <li>
-            <span class="section-advantage-icon"></span>
-            <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section-placement">
-        <h2>Размещение</h2>
-        <ul>
-          <li>
-            <div class="section-placement-img1"></div>
-          </li>
-        </ul>
+        <h2 class="section-heading">Спецпредложение</h2>
+        <h3 class="offer-name">Номера категории люкс</h3>
+        <span class="offer-price">от 5000 р</span>
+        <a href="" class="offer-link">Подробнее</a>
       </section>
     </div>
+
+    <section class="section-aboutus">
+      <div class="conteiner">
+        <h2 class="section-heading">О нас</h2>
+        <p class="aboutus-p">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за
+          собой процесс
+          внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения
+          высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный
+          эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом
+          сложившаяся
+          структура организации требуют определения и уточнения существенных финансовых и административных условий.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-services">
+      <div class="conteiner">
+        <h2 class="section-heading">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="services-img1"></div>
+            <!--Картинка1 -->
+            <div>
+              <a href="" class="services-link">Эксклюзивное обслуживание</a>
+              <p class="services-p">Равным образом постоянный количественный рост и сфера нашей акт</p>
+            </div>
+          </li>
+          <li class="services-item">
+            <div class="services-img2"></div>
+            <!--Картинка2 -->
+            <div>
+              <a href="" class="services-link">Аренда банкетных залов</a>
+              <p class="services-p">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
+              </p>
+            </div>
+          </li>
+          <li class="services-item">
+            <div class="services-img3"></div>
+            <!--Картинка3 -->
+            <div>
+              <a href="" class="services-link">Сауны, бассейны, бани, фитнес-залы</a>
+              <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
+              </p>
+            </div>
+          </li>
+          <li class="services-item">
+            <div class="services-img4"></div>
+            <!--Картинка4 -->
+            <div>
+              <a href="" class="services-link">Охраняемые автомобильные стоянки</a>
+              <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-advantage">
+      <div class="conteiner">
+        <h2 class="section-heading">Преимущества</h2>
+        <ul class="advantage-link">
+          <li class="advantage-item">
+            <span class="advantage-icon1"></span>
+            <p class="advantage-p">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+          </li>
+          <li>
+            <span class="advantage-icon2"></span>
+            <p class="advantage-p">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+          </li>
+          <li>
+            <span class="advantage-icon3"></span>
+            <p class="advantage-p">Таким образом реализация плановых заданий играет важную роль для понимания</p>
+          </li>
+          <li>
+            <span class="advantage-icon4"></span>
+            <p class="advantage-p">Повседневная практика показывает, что сложившаяся структура организации</p>
+          </li>
+          <li>
+            <span class="advantage-icon5"></span>
+            <p class="advantage-p">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+          </li>
+          <li>
+            <span class="advantage-icon6"></span>
+            <p class="advantage-p">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
+          </li>
+          <li>
+            <span class="advantage-icon7"></span>
+            <p class="advantage-p">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          </li>
+          <li>
+            <span class="advantage-icon8"></span>
+            <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-placement">
+      <div class="conteiner">
+        <h2 class="section-heading">Размещение</h2>
+        <ul class="placement-link">
+          <li class="placement-item">
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.1">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>4 698 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona española</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.2">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>5 148 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona son típicas</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.3">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 254 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona de la guerra</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.4">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 320 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona mentira piadosa</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.5">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 457 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona empujar la creatividad</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.6">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 490 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona el retorno</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.7">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 505 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona enfermo terminó</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="placement-img">
+              <img alt="Отель" class="placement-img1.8">
+            </div>
+            <div>
+              <span class="placement-price">от <strong>6 824 р</strong> / ночь</span>
+              <div class="placement-rating"><img alt="Рейтинг 4 из 5" class="placement-star"></div>
+              <div>
+                <h3 class="placement-hotelname">Lagoona suerte siguió siempre</h3>
+                <span class="placement-geo">Барселона, Испания</span>
+              </div>
+            </div>
+            <br>
+            <div>
+              <a href="" class="placement-button-link">
+                <button class="placement-button">Номера</button>
+              </a>
+            </div>
+          </li>
+          <li class="placement-more">
+            <a href="" class="placement-more-link">Посмотреть все варианты</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 </body>
 
