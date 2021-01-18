@@ -128,18 +128,14 @@ html {
     width: 22px;
     height: 22px;
     border: none;
+    cursor: pointer;
 }
+
 
 .div-reservation {
     display: flex;
     /* width: 500px; */
     flex-direction: column;
-}
-
-.section-offer {
-    flex-grow: 1;
-    max-width: 580px;
-    /* margin-left: 20px; */
 }
 
 .display-flex {
@@ -149,13 +145,89 @@ html {
 
 .section-reservation {
     flex-grow: 1;
-    max-width: 520px;
+    max-width: 518px;
     /* margin-right: 20px;
     padding-right: 20px; */
 }
 
+.reservation-item {
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 21px;
+    /* padding: 27px auto 31px 21px; */
+    border-radius: 9px;
+    color: #999999;
+}
+
+.reservation-button {
+    background-color: #cc9933;
+    border: none;
+    border-radius: 9px;
+    padding: 28px 30px 28px 30px;
+    color: white;
+    margin-right: 30px;
+}
+
+.reservation-number {
+    color: #cc9933;
+}
+
+.reservation-words {
+    color:  #999999;
+}
+
+.section-offer {
+    flex-grow: 1;
+    max-width: 596px;
+    /* margin-left: 20px; */
+}
+
+.offer-img {
+    /* display: inline-block; */
+    width: 595px;
+    height: 540px;
+    background: url(../img/n-1.png) no-repeat center;
+}
+
+.offer-text {
+    /* max-width: 324px;
+    max-height: 237px; */
+    padding: 265px 232px 35px 41px;
+}
+
+.offer-name {
+    color: #ffffff;
+    font-size: 66px;
+    margin: 0;
+    /* margin-top: 264px; */
+    /* padding-top: 264px;
+    padding-bottom: 110px; */
+}
+
+.offer-price {
+    color: #ffffff;
+    opacity: .5;
+    font-size: 35px;
+    margin-right: 35px;
+}
+
+.offer-link {
+    color: #cc9933;
+    font-size: 16px;
+    background: url(../img/arrow.png) no-repeat right;
+    padding-right: 15px;
+}
+
+
 .aboutus-p {
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    font-size: 16px;
+    color: #666666;
+    margin: 0px 200px 0px 40px;
+    line-height: 32px;
 }
 
 .services-list {
@@ -183,6 +255,55 @@ html {
     /* flex-wrap: wrap; */
 }
 
+.services-text {
+    height: 160px;
+    width: 572px;
+    background-color: #ffffff;
+    border-radius: 9px;
+    /* margin: 0; */
+}
+
+.services-link {
+    font-size: 22px;
+    color: #cc9933;
+    margin-left: 45px;
+    background: url(../img/arrow.png) no-repeat right;
+    padding-right: 21px;
+}
+
+.services-p {
+    color: #333333;
+    line-height: 32px;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+.services-img1 {
+    width: 572px;
+    height: 165px;
+    background: url(../img/1.png);
+}
+
+.services-img2{
+    width: 572px;
+    height: 165px;
+    background: url(../img/2.png);
+}
+
+.services-img3{
+    width: 572px;
+    height: 165px;
+    background: url(../img/3.png);
+}
+
+.services-img4{
+    width: 572px;
+    height: 165px;
+    background: url(../img/4.png);
+}
+
+
+
 .advantage-link {
     display: flex;
     justify-content: space-between;
@@ -194,6 +315,87 @@ html {
     margin-bottom: 25px;
 }
 
+.advantage-item {
+    width: 276px;
+    height: 276px;
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+
+.advantage-icon1{
+    width: 65px;
+    height: 59px;
+    background:url(../img/bathtub.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon2{
+    width: 65px;
+    height: 59px;
+    background:url(../img/hanger.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon3{
+    width: 65px;
+    height: 59px;
+    background:url(../img/heating.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon4{
+    width: 65px;
+    height: 59px;
+    background:url(../img/hotel-key.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon5{
+    width: 65px;
+    height: 59px;
+    background:url(../img/parking.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon6{
+    width: 65px;
+    height: 59px;
+    background:url(../img/reception.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon7{
+    width: 65px;
+    height: 59px;
+    background:url(../img/security-box.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-icon8{
+    width: 65px;
+    height: 59px;
+    background:url(../img/swimming-pool.svg) no-repeat;
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.advantage-p {
+    color: #333333;
+    line-height: 32px;
+    font-size: 16px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+
+
 .placement-link {
     display: flex;
     justify-content: space-between;
@@ -203,4 +405,56 @@ html {
 .placement-item {
     width: 373px;
     margin-bottom: 25px;
+}
+
+.placement-img {
+    width: 373px;
+    height: 217px;
+}
+
+.placement-item {
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+
+.placement-button {
+    border: solid #cc9933;
+    color: #cc9933;
+    border-width: 1px;
+    font-weight: bold;
+    padding: 11px 20px;
+    border-radius: 9px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-left: 44px;
+    margin-bottom: 43px;
+}
+
+.placement-price{
+    font-size: 20px;
+    margin-left: 44px;
+    margin-right: 36px;
+}
+
+.placement-star {
+    width: 14px;
+    height: 13px;
+}
+
+.placement-hotelname {
+    margin-left: 44px;
+}
+
+.placement-geo{
+    margin-left: 44px;
+    color: #999999;
+}
+
+.placement-more {
+    background: url(../img/1.9.png) no-repeat;
+}
+
+.placement-more-link {
+    font-size: 22px;
+    color: #ffffff;
 }
