@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-heading {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo-tlf {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 25px;
+}
+
+.header-tlf {
+    /* margin-right: auto; */
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.search {
+    /* position: relative; */
+    /* align-self: flex-end; */
+}
+
+.div-reservation {
+    display: flex;
+    /* width: 500px; */
+    flex-direction: column;
+}
+
+.section-offer {
+    flex-grow: 1;
+    max-width: 580px;
+    /* margin-left: 20px; */
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-reservation {
+    flex-grow: 1;
+    max-width: 520px;
+    /* margin-right: 20px;
+    padding-right: 20px; */
+}
+
+.reservation-item {
+}
