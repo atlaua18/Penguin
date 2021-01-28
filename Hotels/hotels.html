@@ -62,26 +62,34 @@
       <section class="section-reservation">
         <h2 class="section-heading">Быстрая бронь</h2>
         <div class="div-reservation">
-          <input type="text" placeholder="Город" class="reservation-item">
-          <input type="text" placeholder="Категория номера" class="reservation-item">
-          <input type="text" placeholder="Дата заселения" class="reservation-item">
-          <input type="text" placeholder="Количество ночей" class="reservation-item">
-          <input type="text" placeholder="Количество гостей" class="reservation-item">
-        </div>
-        <div>
-          <button class="reservation-button">Найти номер</button>
-          <a href="" class="reservation-number">9756</a>
+          <form action="https://postman-echo.com/post" autocomplete method="POST" class="reservation-form">
+            <input required type="text" name="City" placeholder="Город" class="reservation-input">
+            <input type="text" name="Room category" placeholder="Категория номера" class="reservation-input">
+            <input type="text" name="Check-in date" placeholder="Дата заселения" class="reservation-input">
+            <input type="text" name="Number of nights" placeholder="Количество ночей" class="reservation-input">
+            <input type="text" name="Number of guests" placeholder="Количество гостей" class="reservation-input">
+            <div>
+            <button type="submit" class="reservation-button btn">Найти номер</button>
+            <a href="" class="reservation-number">9756</a>
           <span class="reservation-words">предложений доступно</span>
         </div>
+          </form>
+        </div>
+        <!-- <div> -->
+          <!-- <button type="submit" class="reservation-button">Найти номер</button> -->
+          <!-- <a href="" class="reservation-number">9756</a>
+          <span class="reservation-words">предложений доступно</span> -->
+        <!-- </div> -->
       </section>
       <section class="section-offer">
         <h2 class="section-heading">Спецпредложение</h2>
         <div class="offer-img">
+          <img src="../Hotels/img/n-1.png" alt="">
           <div class="offer-text">
-          <h3 class="offer-name">Номера категории люкс</h3>
-          <span class="offer-price">от 5000 р</span>
-          <a href="" class="offer-link">Подробнее</a>
-        </div>
+            <h3 class="offer-name">Номера категории люкс</h3>
+            <span class="offer-price">от 5000 р</span>
+            <a href="" class="offer-link">Подробнее</a>
+          </div>
         </div>
       </section>
     </div>
@@ -89,7 +97,12 @@
     <section class="section-aboutus">
       <div class="container">
         <h2 class="section-heading">О нас</h2>
-        <p class="aboutus-p">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.
+        <p class="aboutus-p">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за
+          собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
+          соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой
+          интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом
+          сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных
+          условий.
         </p>
       </div>
     </section>
@@ -99,16 +112,18 @@
         <h2 class="section-heading">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <div class="services-img1"></div>
-            <!--Картинка1 -->
+            <div class="services-img">
+              <img src="../Hotels/img/1.png" alt="Картинка" class="services-img">
+            </div>
             <div class="services-text">
               <a href="" class="services-link">Эксклюзивное обслуживание</a>
               <p class="services-p">Равным образом постоянный количественный рост и сфера нашей акт</p>
             </div>
           </li>
           <li class="services-item">
-            <div class="services-img2"></div>
-            <!--Картинка2 -->
+            <div class="services-img">
+              <img src="../Hotels/img/2.png" alt="Картинка">
+            </div>
             <div class="services-text">
               <a href="" class="services-link">Аренда банкетных залов</a>
               <p class="services-p">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
@@ -116,8 +131,9 @@
             </div>
           </li>
           <li class="services-item">
-            <div class="services-img3"></div>
-            <!--Картинка3 -->
+            <div class="services-img">
+              <img src="../Hotels/img/3.png" alt="Картинка">
+            </div>
             <div class="services-text">
               <a href="" class="services-link">Сауны, бассейны, бани, фитнес-залы</a>
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
@@ -125,8 +141,9 @@
             </div>
           </li>
           <li class="services-item">
-            <div class="services-img4"></div>
-            <!--Картинка4 -->
+            <div class="services-img">
+              <img src="../Hotels/img/4.png" alt="Картинка">
+            </div>
             <div class="services-text">
               <a href="" class="services-link">Охраняемые автомобильные стоянки</a>
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
@@ -168,6 +185,14 @@
           <li class="advantage-item">
             <div class="advantage-icon7"></div>
             <p class="advantage-p">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          </li>
+          <li class="advantage-item">
+            <div class="advantage-icon8"></div>
+            <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </li>
+          <li class="advantage-item">
+            <div class="advantage-icon8"></div>
+            <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
           </li>
           <li class="advantage-item">
             <div class="advantage-icon8"></div>
@@ -235,14 +260,14 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.3.png" alt="Отель" class="placement-img13">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 254 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
-                <img src="img/star emty.svg" class="placement-star">
+                <img src="img/star.svg" class="placement-star">
               </span>
               <div>
                 <h3 class="placement-hotelname">Lagoona de la guerra</h3>
@@ -260,14 +285,14 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.4.png" alt="Отель" class="placement-img14">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 320 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
-                <img src="img/star emty.svg" class="placement-star">
+                <img src="img/star.svg" class="placement-star">
               </span>
               <div>
                 <h3 class="placement-hotelname">Lagoona mentira piadosa</h3>
@@ -285,7 +310,7 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.5.png" alt="Отель" class="placement-img15">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 457 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
@@ -310,7 +335,7 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.6.png" alt="Отель" class="placement-img16">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 490 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
@@ -335,14 +360,14 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.7.png" alt="Отель" class="placement-img17">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 505 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
                 <img src="img/star.svg" class="placement-star">
-                <img src="img/star emty.svg" class="placement-star">
+                <img src="img/star.svg" class="placement-star">
               </span>
               <div>
                 <h3 class="placement-hotelname">Lagoona enfermo terminó</h3>
@@ -360,7 +385,7 @@
             <div class="placement-img">
               <img src="../Hotels/img/1.8.png" alt="Отель" class="placement-img1.8">
             </div>
-            <div>
+            <div class="placement-info">
               <span class="placement-price">от <strong>6 824 р</strong> / ночь</span>
               <span class="placement-rating">
                 <img src="img/star.svg" alt="Рейтинг 4 из 5" class="placement-star">
@@ -382,13 +407,133 @@
             </div>
           </li>
           <li class="placement-more placement-item">
-            <a href="" class="placement-more-link">Посмотреть все варианты</a>
+            <div class="placement-more-link">
+              <a href="" class="placement-more-text">Посмотреть все варианты</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
+    <section class="contacts">
+      <div class="container">
+        <h2 class="section-heading">Контакты</h2>
+        <div class="container-contacts">
+          <div class="contacts-info">
+            <div class="contacts-flex">
+              <h3 class="info-title-addr">Адрес</h3>
+              <span class="contacts-address">Москва, улица Юности, дом 5 строение 4, офис 2</span>
+            </div>
+            <div class="contacts-flex">
+              <h3 class="info-title-tlf">Телефоны</h3>
+              <span class="info-tlf">
+                <a href="tel:+74995356434" class="contacts-tlf">
+                  +7 (499) 535-64-34
+                </a>
+                <br>
+                <a href="tel:+74950050544" class="contacts-tlf">
+                  +7 (495) 005-05-44
+                </a>
+              </span>
+            </div>
+            <div class="contacts-flex">
+              <h3 class="info-title-mail">E&#8209;mail</h3>
+              <span class="info-mail">
+                <a href="email:lg.oona@mail.ru" class="contacts-email">
+                  lg.oona@mail.ru
+                </a>
+                <span class="contacts-email-words ">по вопросам бронирования</span>
+                <br>
+                <a href="email:hotels.ln@mail.ru " class="contacts-email">
+                  hotels.ln@mail.ru
+                </a>
+                <span class="contacts-email-words">по вопросам сотрудничества</span>
+              </span>
+            </div>
+            <div class="contacts-flex">
+              <h3 class="info-title-graf">График</h3>
+              <span>Понедельник - пятница, с 10:0 до 19:00</span>
+            </div>
+            <button class="info-button">Построить маршрут</button>
+          </div>
+          <div class="contacts-form">
+            <h2 class="form-heading">Остались вопросы?</h2>
+            <form action="https://postman-echo.com/post" autocomplete method="POST" class="form-flex">
+              <div>
+              <input type="text" name="name" placeholder="Имя" class="input input-name">
+              <input required type="tel" name="phone" placeholder="+7" class="input">
+            </div>
+              <textarea name="message" cols="30" rows="10" placeholder="Сообщение..." class="input-textarea"></textarea>
+              <div class="form-text">
+                Отправляя свои данные вы соглашаетесь с <a href="" class="form-politics">Политикой
+                  конфиденциальности</a>
+              </div>
+              <div><button type="submit" class="form-button">Отправить</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <img src="../Hotels/img/sun-footer-bg.png" alt="" class="img-bg">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="left-text">
+              © 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+            </div>
+            <div class="left-text">
+              Представленная на сайте информация носит справочный характер и не является публичной офертой
+            </div>
+            <a href="" class="left-agreement">Пользовательское соглашение</a>
+          </div>
+          <div class="footer-center">
+            <div class="center-address">11710, улица Юности, дом 5 строение 4, офис 2</div>
+            <div class="footer-contacts">
+              <a href="tel:+74995356434" class="footer-tlf-mail">
+                +7 (499) 535-64-34
+              </a>
+              <br>
+              <a href="tel:+74950050544" class="footer-tlf-mail">
+                +7 (495) 005-05-44
+              </a>
+            </div>
+            <div>
+              <a href="email:lg.oona@mail.ru" class="footer-tlf-mail">
+                lg.oona@mail.ru
+              </a>
+              <br>
+              <a href="email:hotels.ln@mail.ru " class="footer-tlf-mail">
+                hotels.ln@mail.ru
+              </a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <ul class="footer-social-list">
+              <li class="footer-list-item">
+                <a href="" class="footer-link-icon owl"></a>
+              </li>
+              <li class="footer-list-item">
+                <a href="" class="footer-link-icon twitter"></a>
+              </li>
+              <li class="footer-list-item">
+                <a href="" class="footer-link-icon facebook"></a>
+              </li>
+              <li class="footer-list-item">
+                <a href="" class="footer-link-icon vk"></a>
+              </li>
+              <li class="footer-list-item">
+                <a href="" class="footer-link-icon google"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
