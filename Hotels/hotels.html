@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotels</title>
   <link rel="stylesheet" href="/Hotels/css/normalize.css">
+  <link rel="stylesheet" href="../Hotels/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/Hotels/css/style.css">
 </head>
 
@@ -23,6 +24,11 @@
           </a>
         </div>
         <a href="" class="header-lk">
+          <svg class="header-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
+              fill="#c49c4d" />
+          </svg>
           Личный кабинет
         </a>
       </div>
@@ -69,15 +75,15 @@
             <input type="text" name="Number of nights" placeholder="Количество ночей" class="reservation-input">
             <input type="text" name="Number of guests" placeholder="Количество гостей" class="reservation-input">
             <div>
-            <button type="submit" class="reservation-button btn">Найти номер</button>
-            <a href="" class="reservation-number">9756</a>
-          <span class="reservation-words">предложений доступно</span>
-        </div>
+              <button type="submit" class="reservation-button btn">Найти номер</button>
+              <a href="" class="reservation-number">9756</a>
+              <span class="reservation-words">предложений доступно</span>
+            </div>
           </form>
         </div>
         <!-- <div> -->
-          <!-- <button type="submit" class="reservation-button">Найти номер</button> -->
-          <!-- <a href="" class="reservation-number">9756</a>
+        <!-- <button type="submit" class="reservation-button">Найти номер</button> -->
+        <!-- <a href="" class="reservation-number">9756</a>
           <span class="reservation-words">предложений доступно</span> -->
         <!-- </div> -->
       </section>
@@ -110,8 +116,9 @@
     <section class="section-services">
       <div class="container">
         <h2 class="section-heading">Услуги</h2>
-        <ul class="services-list">
-          <li class="services-item">
+        <ul class="row services-list">
+          <li class="col-6">
+            <div class="services-item">
             <div class="services-img">
               <img src="../Hotels/img/1.png" alt="Картинка" class="services-img">
             </div>
@@ -119,8 +126,10 @@
               <a href="" class="services-link">Эксклюзивное обслуживание</a>
               <p class="services-p">Равным образом постоянный количественный рост и сфера нашей акт</p>
             </div>
+          </div>
           </li>
-          <li class="services-item">
+          <li class="col-6">
+            <div class="services-item">
             <div class="services-img">
               <img src="../Hotels/img/2.png" alt="Картинка">
             </div>
@@ -129,8 +138,10 @@
               <p class="services-p">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
               </p>
             </div>
+          </div>
           </li>
-          <li class="services-item">
+          <li class="col-6">
+            <div class="services-item">
             <div class="services-img">
               <img src="../Hotels/img/3.png" alt="Картинка">
             </div>
@@ -139,8 +150,10 @@
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
               </p>
             </div>
+          </div>
           </li>
-          <li class="services-item">
+          <li class="col-6">
+            <div class="services-item">
             <div class="services-img">
               <img src="../Hotels/img/4.png" alt="Картинка">
             </div>
@@ -149,6 +162,7 @@
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции
               </p>
             </div>
+          </div>
           </li>
         </ul>
       </div>
@@ -157,46 +171,66 @@
     <section class="section-advantage">
       <div class="container">
         <h2 class="section-heading">Преимущества</h2>
-        <ul class="advantage-link">
-          <li class="advantage-item">
+        <ul class="row advantage-link">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon1"></div>
             <p class="advantage-p">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon2"></div>
             <p class="advantage-p">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon3"></div>
             <p class="advantage-p">Таким образом реализация плановых заданий играет важную роль для понимания</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon4"></div>
             <p class="advantage-p">Повседневная практика показывает, что сложившаяся структура организации</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon5"></div>
             <p class="advantage-p">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon6"></div>
             <p class="advantage-p">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса </p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon7"></div>
             <p class="advantage-p">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon8"></div>
             <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon8"></div>
             <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </div>
           </li>
-          <li class="advantage-item">
+          <li class="col-3 col-md-3">
+            <div class="advantage-item">
             <div class="advantage-icon8"></div>
             <p class="advantage-p">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -406,8 +440,9 @@
               </a>
             </div>
           </li>
-          <li class="placement-more placement-item">
+          <li class="placement-more">
             <div class="placement-more-link">
+              <img class="placement-more-img" src="../Hotels/img/1.9.png" alt="">
               <a href="" class="placement-more-text">Посмотреть все варианты</a>
             </div>
           </li>
@@ -460,9 +495,9 @@
             <h2 class="form-heading">Остались вопросы?</h2>
             <form action="https://postman-echo.com/post" autocomplete method="POST" class="form-flex">
               <div>
-              <input type="text" name="name" placeholder="Имя" class="input input-name">
-              <input required type="tel" name="phone" placeholder="+7" class="input">
-            </div>
+                <input type="text" name="name" placeholder="Имя" class="input input-name">
+                <input required type="tel" name="phone" placeholder="+7" class="input">
+              </div>
               <textarea name="message" cols="30" rows="10" placeholder="Сообщение..." class="input-textarea"></textarea>
               <div class="form-text">
                 Отправляя свои данные вы соглашаетесь с <a href="" class="form-politics">Политикой

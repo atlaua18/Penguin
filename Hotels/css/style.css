@@ -59,9 +59,9 @@ html {
 
 .container {
     max-width: 1170px;
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
-    margin-bottom: 68px;
+    margin-bottom: 68px; */
 }
 
 .header-top {
@@ -84,12 +84,30 @@ html {
 .header-tlf {
     /* margin-right: auto; */
     color: #666666;
+    /* border-bottom: 1px solid transparent; */
 }
+
+.header-tlf:hover {
+    /* border-bottom: 1px solid #cc9933; */
+    text-decoration: underline;
+    color: #cc9933;
+}
+
 .header-lk{
+    display: flex;
+    align-items: center;
     padding-left: 28px;
-    background: url(../img/keyboard_tab.svg) no-repeat left;
+    /* background: url(../img/keyboard_tab.svg) no-repeat left; */
     color: #cc9933;
     /* background-size: contain; */
+}
+
+.header-lk:hover{
+    color: #999999;
+}
+
+.header-lk:hover .header-icon path{
+    fill: #999999;
 }
 
 .nav {
@@ -116,6 +134,10 @@ html {
 /* .nav-item:not(:last-child) {
     margin-right: 45px;
 } */
+
+.nav-item:hover {
+    color: #cc9933;
+}
 
 .search {
     display: flex;
@@ -156,7 +178,7 @@ html {
 .display-flex {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 68px; */
+    margin-bottom: 68px;
 }
 
 .section-reservation {
@@ -175,9 +197,6 @@ html {
     background-color: #ffffff;
     border: none;
     margin-bottom: 24px;
-    /* padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 21px; */
     padding: 25px 21px 25px 21px;
     border-radius: 9px;
     color: #999999;
@@ -186,15 +205,13 @@ html {
 
 .reservation-button {
     background-color: #cc9933;
-    border: none;
+    border: 1px solid #cc9933;
     border-radius: 9px;
-    padding: 28px 30px 28px 30px;
+    padding: 27px 29px;
     color: white;
     margin-right: 30px;
     cursor: pointer;
     outline:none;
-    /* transition: color 1s ease; */
-    /* transition: background-color 1s ease; */
     transition-property: color, background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -203,10 +220,14 @@ html {
 .btn:hover {
     color: black;
     background-color: transparent;
-    /* border: 1px solid #cc9933; */
 }
 
 .reservation-number {
+    color: #cc9933;
+}
+
+.reservation-number:hover {
+    text-decoration: underline;
     color: #cc9933;
 }
 
@@ -262,6 +283,13 @@ html {
     background: url(../img/arrow.png) no-repeat right;
     padding-right: 15px;
     background-size: contain;
+    /* border-bottom: 1px solid transparent; */
+}
+
+.offer-link:hover {
+    /* border-bottom: 1px solid #cc9933; */
+    text-decoration: underline;
+    color: #cc9933;
 }
 
 
@@ -271,15 +299,16 @@ html {
     color: #666666;
     margin: 0px 245px 0px 40px;
     line-height: 32px;
-    /* margin-bottom: 68px; */
+    margin-bottom: 68px;
 }
 
 
-.services-list {
+/* .services-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+    margin-bottom: 68px;
+} */
 
 .services-link {
     font-weight: bold;
@@ -298,6 +327,10 @@ html {
     /* flex-wrap: wrap; */
 }
 
+/* .services-item:not(:nth-child(2n)) {
+    margin-right: 24px;
+} */
+
 .services-text {
     height: 160px;
     width: 572px;
@@ -308,12 +341,18 @@ html {
 }
 
 .services-link {
+    display: inline-block;
     font-size: 22px;
     color: #cc9933;
     margin-left: 45px;
     background: url(../img/arrow.png) no-repeat right;
     padding-right: 21px;
     background-size: contain;
+    transition: transform .5s;
+}
+
+.services-link:hover {
+    transform: translateX(15px);
 }
 
 /* .services-link:hover {
@@ -325,22 +364,23 @@ html {
     line-height: 32px;
     font-size: 16px;
     margin-left: 45px;
+    margin-right: 130px;
 }
 
 .services-img {
     border-radius: 9px 9px 0px 0px;
     /* background-size: contain; */
-    width: 572px;
+    /* width: 572px; */
     height: 165px;
     /* background: url(../img/1.png); */
 }
 
 
-.advantage-link {
+/* .advantage-link {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-wrap: wrap;
-}
+} */
 
 /* .advantage-item {
     max-width: 275px;
@@ -356,12 +396,12 @@ html {
     padding-left: 45px;
     padding-right: 45px;
     margin-bottom: 25px;
-    margin-right: 22px;
+    /* margin-right: 22px; */
 }
 
-.advantage-item:nth-child(4n) {
+/* .advantage-item:nth-child(4n) {
     margin-right: 0px;
-}
+} */
 
 .advantage-icon1{
     width: 65px;
@@ -429,6 +469,7 @@ html {
 
 .placement-item {
     width: 373px;
+    height: 441px;
     margin-bottom: 25px;
     background-color: #ffffff;
     border-radius: 9px;
@@ -443,6 +484,10 @@ html {
     padding-top: 33px;
 }
 
+.placement-button-link {
+    margin-top: 18px;
+}
+
 .placement-button {
     border: solid #cc9933;
     color: #cc9933;
@@ -453,7 +498,14 @@ html {
     background-color: #ffffff;
     cursor: pointer;
     margin-left: 44px;
-    margin-bottom: 43px;
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.placement-button:hover {
+    color: white;
+    background-color: #cc9933;
 }
 
 .placement-price {
@@ -477,22 +529,72 @@ html {
 }
 
 .placement-more {
-    background: url(../img/1.9.png) no-repeat;
-    background-size: cover;
+    /* background: url(../img/1.9.png) no-repeat; */
+    /* background-size: cover; */
 }
+
+.placement-more-link {
+    width: 373px;
+    height: 441px;
+    position: relative;
+    /* margin: 365px 39px 52px 36px; */
+    /* background: url(../img/arrowWhite.png) no-repeat right; */
+    /* padding-right: 14px; */
+}
+
+.placement-more-img {
+    /* position: relative; */
+    /* object-fit: cover; */
+    /* max-width: 100%; */
+}
+
+/* .more-div {
+    width: 373px;
+    height: 373px;
+    position: relative;
+} */ 
 
 .placement-more-text {
     /* width: 373px;
     height: 441px; */
+    position: absolute;
+    left: 36px;
+    top: 365px;
     font-size: 22px;
     color: #ffffff;
-}
-
-.placement-more-link{
-    margin: 365px 39px 52px 36px;
     background: url(../img/arrowWhite.png) no-repeat right;
     padding-right: 14px;
 }
+
+/* .placement-more-text::before {
+    content: "link";
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    display: block;
+    width: 100%;
+    height: 360px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+} 
+
+.placement-more-text::after {
+    content: "link";
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    display: block;
+    width: 100%;
+    height: 55px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+} */
 
 
 
