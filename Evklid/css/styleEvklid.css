@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+html {
+    /* background-color: rgba(23, 77, 77, 0.301); */
+    background-color: #FFFFFF;
+}
+
+.section {
+    margin-bottom: 100px;
+}
+
+.heading {
+    font-size: 48px;
+    color: #333333;
+    margin: 0;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #666666;
+    line-height: 32px;
+    margin: 0;
+}
+
+.title_h2 {
+    color: #333333;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0
+}
+
+.container {
+    max-width: 1770px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 100px; */
+}
+
+
+.header {
+    box-shadow: 0 10px 50px -10px rgba(0,0,0,0.2);
+    /* max-width: 1920px; */
+    /* height: 100px; */
+    /* padding-left: 75px; */
+    /* padding-right: 75px; */
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 805px;
+    flex-grow: 1;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.header__navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 708px;
+    flex-grow: 1;
+}
+
+.header__item {
+    font-size: 18px;
+}
+
+
+
+
+.mainbanner {
+    height: 620px;
+}
+
+.mainbanner__items {
+    position: relative;
+}
+
+.mainbanner__itemsonimg {
+    position: absolute;
+    top: 103px;
+    left: 78px;
+    width: 50%;
+}
+
+.mainbanner__title {
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 32px;   
+}
+
+.mainbanner__paragraph {
+    font-size: 23px;
+    color: #FFFFFF;
+    margin-bottom: 97px;
+    font-weight: bold;
+}
+
+.mainbanner__btn {
+    width: 280px;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #FF9900;
+    border: none;
+    padding: 25px 37px;
+    cursor: pointer;
+}
+
+
+
+.aboutus__heading {
+    margin-bottom: 20px;
+}
+
+.aboutus__top {
+    max-width: 1235px;
+    margin-bottom: 44px;
+}
+
+.aboutus__buttom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutus__buttom_left {
+    /* flex-grow: 1; */
+    position: relative;
+    width: 870px;
+    height: 622px;
+    margin-right: 30px;
+}
+
+.aboutus__buttom_left_imgtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 446px;
+    width: 100%;
+    height: 176px;
+    background-color: rgba(0,0,0,0.5);
+    /* opacity: 0.5; */
+    padding: 42px 60px;
+}
+
+.aboutus__buttom_left_p {
+    max-width: 497px;
+    color: #FFFFFF;
+}
+
+.aboutus__buttom_left_imgtext_btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 3px solid #FF9900;
+    background-color: transparent;
+    padding: 20px 38px;
+    cursor: pointer;
+}
+
+.aboutus__img {
+    object-fit: cover;
+}
+
+.aboutus__buttom_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #CACACA;
+    max-width: 870px;
+    height: 295px;
+    padding: 66px 118px 66px 63px;
+}
+
+.aboutus__buttom_item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.aboutus__svg_icon {
+    width: 178px;
+    height: 137px;
+    margin-right: 59px;
+}
+
+
+
+
+.howwork__heading {
+    margin-bottom: 38px;
+}
+
+.howwork__steps_list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    /* margin-right: 89px; */
+}
+
+.howwork__steps {
+    margin-bottom: 50px;
+}
+
+.howwork__steps_item {
+    font-size: 18px;
+    color: #333333;
+}
+
+.howwork__textandimg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.howwork__paragraph {
+    max-width: 758px;
+}
+
+.howwork__btn {
+    margin-top: 52px;
+}
+
+.howwork__btn_more {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    padding: 20px 38px;
+    cursor: pointer;
+    /* width: 173px; */
+    margin-right: 30px;
+}
+
+.howwork__btn_pact {
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #333333;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 20px 38px;
+}
+
+
+
+
+.FAQ__heading {
+    margin-bottom: 50px;
+}
+
+.FAQ__question_div {
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+}
+
+.FAQ__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.FAQ__question:not(:first-child) {
+    border-top: 1px solid #CACACA;
+}
+
+.FAQ__title {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+/* .FAQ__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+} */
+
+
+
+.footer {
+    background-color: #222222;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 75px;
+}
+
+.footer__left {
+    max-width: 318px;
+}
+
+.footer__logo {
+    margin-bottom: 19px;
+}
+
+.footer__left_listcontacts {
+    margin-bottom: 118px;
+}
+
+.footer__left_listcontactsitem {
+    font-size: 18px;
+    color: #CACACA;
+    line-height: 36px;
+}
+
+.footer__left_listicons {
+    display: flex;
+}
+
+.footer__left_itemcons:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer__form_heading {
+    color: #CACACA;
+    margin-bottom: 31px;
+}
+
+.footer__form {
+    max-width: 576px;
+}
+
+.input {
+    width: 100%;
+    outline:none;
+    border: none;
+    color: #CACACA;
+    background-color: #414141;
+    margin-bottom: 25px;
+}
+
+.footer__form_input {
+    padding: 14px 24px;
+}
+
+.footer__form_textarea {
+    max-height: 570px;
+    padding: 14px 24px ;
+    resize: none;
+}
+
+.footer__form_btn {
+    color: #FFFFFF;
+    background-color: #FF9900;
+    padding: 20px 52px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.footer__form_checkbox {
+    margin-right: 4px;
+}
+
+
+.footer__form_agreement{
+    font-size: 16px;
+    color: #CACACA;
+    line-height: 32px;
+}
+
+.footer__right {
+    max-width: 363px;
+}
+
+.footer__right_p {
+    color: #CACACA;
+}
