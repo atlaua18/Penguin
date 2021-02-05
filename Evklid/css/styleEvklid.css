@@ -21,6 +21,7 @@ img {
 html {
     /* background-color: rgba(23, 77, 77, 0.301); */
     background-color: #FFFFFF;
+    font-family: 'Montserrat';
 }
 
 .section {
@@ -31,6 +32,7 @@ html {
     font-size: 48px;
     color: #333333;
     margin: 0;
+    font-weight: 400;
 }
 
 .paragraph {
@@ -38,13 +40,15 @@ html {
     color: #666666;
     line-height: 32px;
     margin: 0;
+    font-weight: 400;
 }
 
 .title_h2 {
     color: #333333;
     font-size: 24px;
     line-height: 32px;
-    margin: 0
+    margin: 0;
+    font-weight: 700;
 }
 
 .container {
@@ -83,7 +87,6 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    
 }
 
 .header__navlist {
@@ -96,6 +99,40 @@ html {
 
 .header__item {
     font-size: 18px;
+    font-weight: 600;
+}
+
+.header__item_link:hover {
+    border-bottom: 3px solid #FF9900;
+}
+
+.header__item_link:active {
+    color: #E1670E;
+    border-bottom: 3px solid #E1670E;
+}
+
+/* .header__search:hover .header__searchicon {
+    fill: #FF9900;
+} */
+
+/* .header__search:hover {
+    fill: #FF9900;
+} */
+
+.header__searchicon:hover rect {
+    fill: #FF9900;
+}
+
+.header__searchicon:hover circle {
+    stroke: #FF9900;
+}
+
+.header__searchicon:active rect {
+    fill: #E1670E;
+}
+
+.header__searchicon:active circle {
+    stroke: #E1670E;
 }
 
 
@@ -109,6 +146,11 @@ html {
     position: relative;
 }
 
+.mainbanner__img {
+    height: 620px;
+    object-fit: cover;
+}
+
 .mainbanner__itemsonimg {
     position: absolute;
     top: 103px;
@@ -120,24 +162,37 @@ html {
     font-size: 70px;
     color: #FFFFFF;
     margin-top: 0;
-    margin-bottom: 32px;   
+    margin-bottom: 32px;
+    font-weight: 800;   
 }
 
 .mainbanner__paragraph {
+    margin: 0;
     font-size: 23px;
     color: #FFFFFF;
     margin-bottom: 97px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .mainbanner__btn {
     width: 280px;
     font-size: 23px;
+    font-weight: 700;
     color: #FFFFFF;
     background-color: #FF9900;
     border: none;
     padding: 25px 37px;
     cursor: pointer;
+    transition: background-color .5s ease;
+    outline: none;
+}
+
+.mainbanner__btn:hover {
+    background-color: #FFC266;
+}
+
+.mainbanner__btn:active {
+    background-color: #E1670E;
 }
 
 
@@ -180,16 +235,31 @@ html {
 .aboutus__buttom_left_p {
     max-width: 497px;
     color: #FFFFFF;
+    font-weight: 700;
 }
 
 .aboutus__buttom_left_imgtext_btn {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     color: #FFFFFF;
     border: 3px solid #FF9900;
     background-color: transparent;
     padding: 20px 38px;
     cursor: pointer;
+    transition-property: border-color, background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    outline: none;
+}
+
+.aboutus__buttom_left_imgtext_btn:hover {
+    border: 3px solid #FF9900;
+    background-color: #FF9900;
+}
+
+.aboutus__buttom_left_imgtext_btn:active {
+    border-color: #E1670E;
+    background-color: #E1670E;
 }
 
 .aboutus__img {
@@ -203,7 +273,7 @@ html {
     border: 1px solid #CACACA;
     max-width: 870px;
     height: 295px;
-    padding: 66px 118px 66px 63px;
+    padding: 66px 115px 66px 63px;
 }
 
 .aboutus__buttom_item:not(:last-child) {
@@ -223,6 +293,14 @@ html {
     margin-bottom: 38px;
 }
 
+.howwork__text {
+    display: none;
+}
+
+.howwork__text_active {
+    display: block;
+}
+
 .howwork__steps_list {
     display: flex;
     justify-content: space-between;
@@ -237,6 +315,25 @@ html {
 .howwork__steps_item {
     font-size: 18px;
     color: #333333;
+}
+
+.howwork__steps_btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.howwork__steps_btn:focus { 
+    color: #FF9900;
+}
+
+.howwork__steps_btn:hover {
+    color: #FF9900;
+}
+
+.howwork__steps_btn:active {
+    color: #E1670E;
 }
 
 .howwork__textandimg {
@@ -254,24 +351,52 @@ html {
 
 .howwork__btn_more {
     font-size: 16px;
+    font-weight: 700;
     color: #FFFFFF;
-    border: 1px solid #FF9900;
+    border: none;
+    /* border: 1px solid #FF9900; */
     background-color: #FF9900;
     padding: 20px 38px;
     cursor: pointer;
     /* width: 173px; */
     margin-right: 30px;
+    transition: background-color .5s ease;
+    outline: none;
+}
+
+.howwork__btn_more:hover {
+    background-color: #FFC266;
+}
+
+.howwork__btn_more:active {
+    background-color: #E1670E;
 }
 
 .howwork__btn_pact {
     font-size: 16px;
+    font-weight: 400;
     color: #333333;
     border: 1px solid #333333;
     background-color: inherit;
     cursor: pointer;
     padding: 20px 38px;
+    outline: none;
+    transition-property: border, color, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 
+.howwork__btn_pact:hover {
+    border: 1px solid #666666;
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+.howwork__btn_pact:active {
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    background-color: #000000;
+}
 
 
 
@@ -284,6 +409,13 @@ html {
     border-bottom: 1px solid #CACACA;
 }
 
+/* .FAQ__question_div:hover .FAQ__title {
+    color: #FF9900;
+    border-top: 1px solid #FF9900;
+    border-bottom: 1px solid #FF9900;
+    color: #FF9900;
+} */
+
 .FAQ__question {
     display: flex;
     justify-content: space-between;
@@ -291,14 +423,41 @@ html {
     cursor: pointer;
 }
 
+.FAQ__question:hover .FAQ__title {
+    color: #FF9900;
+}
+
+.FAQ__question:hover .FAQ__title_slesh {
+    color: #FF9900;
+}
+
 .FAQ__question:not(:first-child) {
     border-top: 1px solid #CACACA;
+}
+
+.FAQ__question:not(:first-child):hover {
+    /* border-bottom: 1px solid #FF9900;
+    border-top: 1px solid #FF9900; */
+    border-color: #FF9900;
 }
 
 .FAQ__title {
     padding-top: 39px;
     padding-bottom: 39px;
+    font-weight: 700;
 }
+
+/* .FAQ__title:hover {
+    color: #FF9900;
+} */
+
+.FAQ__title_slesh {
+    color: #CACACA;
+}
+
+/* .FAQ__title_slesh:hover {
+    color: #FF9900;
+} */
 
 /* .FAQ__btn {
     border: none;
@@ -316,7 +475,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 48px 75px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .footer__left {
@@ -335,6 +495,7 @@ html {
     font-size: 18px;
     color: #CACACA;
     line-height: 36px;
+    font-weight: 600;
 }
 
 .footer__left_listicons {
@@ -355,6 +516,8 @@ html {
 }
 
 .input {
+    font-size: 16px;
+    font-weight: 400;
     width: 100%;
     outline:none;
     border: none;
@@ -374,6 +537,8 @@ html {
 }
 
 .footer__form_btn {
+    font-size: 16px;
+    font-weight: 700;
     color: #FFFFFF;
     background-color: #FF9900;
     padding: 20px 52px;
@@ -384,7 +549,6 @@ html {
 .footer__form_checkbox {
     margin-right: 4px;
 }
-
 
 .footer__form_agreement{
     font-size: 16px;
